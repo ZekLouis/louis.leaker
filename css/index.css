@@ -1,0 +1,542 @@
+@font-face {
+  font-family: Quantify;
+  src: url(../fonts/quantify/quantify.ttf);
+}
+@font-face {
+  font-family: Lato_Black;
+  src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: Lato_BlackItalic;
+  src: url(../fonts/Lato-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Lato_Bold;
+  src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato_BoldItalic;
+  src: url(../fonts/Lato-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Lato_Medium;
+  src: url(../fonts/Lato-Medium.ttf);
+}
+@font-face {
+  font-family: Lato_Regular;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato_Thin;
+  src: url(../fonts/Lato-Thin.ttf);
+}
+/* line 48, ../sass/index.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Lato_Thin;
+}
+
+/* line 55, ../sass/index.scss */
+.divider {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 10px auto 20px;
+  background-color: #2abb9b;
+}
+
+/* line 64, ../sass/index.scss */
+div.header {
+  height: 100%;
+  background: url(../images/header.jpg) fixed;
+  background-size: cover;
+}
+/* line 70, ../sass/index.scss */
+div.header .topbar {
+  padding: 10px 15px;
+}
+/* line 73, ../sass/index.scss */
+div.header .topbar img {
+  width: 30px;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 4px;
+  float: left;
+  display: none;
+}
+/* line 81, ../sass/index.scss */
+div.header .topbar span {
+  float: left;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  color: black;
+}
+/* line 87, ../sass/index.scss */
+div.header .topbar span:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #2abb9b;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+/* line 99, ../sass/index.scss */
+div.header .topbar span:hover:after {
+  width: 100%;
+}
+/* line 104, ../sass/index.scss */
+div.header .topbar ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+/* line 109, ../sass/index.scss */
+div.header .topbar ul li {
+  display: inline-block;
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  color: black;
+}
+/* line 117, ../sass/index.scss */
+div.header .topbar ul li:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #2abb9b;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+/* line 129, ../sass/index.scss */
+div.header .topbar ul li:hover:after {
+  width: 100%;
+}
+/* line 137, ../sass/index.scss */
+div.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 143, ../sass/index.scss */
+div.header .titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 149, ../sass/index.scss */
+div.header .titles img {
+  width: 100px;
+}
+
+/* line 155, ../sass/index.scss */
+nav {
+  width: 100%;
+}
+/* line 158, ../sass/index.scss */
+nav ul li {
+  min-width: 35px;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  color: #C7C7C7;
+  font-family: Lato_Regular;
+  font-size: 13px;
+  padding: 0 15px;
+  line-height: 36px;
+  border-radius: 30px;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  /* IE10 is actually unprefixed */
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  margin: 0 15px;
+}
+/* line 177, ../sass/index.scss */
+nav ul li.active {
+  background: linear-gradient(to bottom right, #3acfd5, #3a8ed5);
+  color: white;
+}
+/* line 182, ../sass/index.scss */
+nav ul li:hover {
+  background: linear-gradient(to bottom right, #3acfd5, #3a8ed5);
+  color: white;
+}
+
+/* line 190, ../sass/index.scss */
+h2 {
+  text-align: center;
+  font-size: 25px;
+  font-family: Quantify;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* line 198, ../sass/index.scss */
+section {
+  padding: 95px 0;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 203, ../sass/index.scss */
+section .icon {
+  font-size: 68px;
+}
+/* line 207, ../sass/index.scss */
+section p.presentation {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* line 213, ../sass/index.scss */
+div.section-grey {
+  background-color: #F1F1F1;
+}
+
+/* line 217, ../sass/index.scss */
+div.section-footer {
+  background-color: #293a49;
+}
+/* line 220, ../sass/index.scss */
+div.section-footer h2 {
+  color: white;
+}
+
+/* line 225, ../sass/index.scss */
+.element {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0;
+  vertical-align: top;
+}
+/* line 232, ../sass/index.scss */
+.element ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 25px;
+}
+/* line 238, ../sass/index.scss */
+.element ul.left {
+  text-align: left;
+}
+/* line 242, ../sass/index.scss */
+.element ul .year {
+  color: #2abb9b;
+  font-weight: bold;
+}
+/* line 248, ../sass/index.scss */
+.element img {
+  width: 95%;
+}
+/* line 252, ../sass/index.scss */
+.element p {
+  width: 95%;
+  background-color: white;
+  margin: 15px auto;
+  padding: 15px 0;
+}
+
+/* line 260, ../sass/index.scss */
+#terminal {
+  background-color: black;
+  color: white;
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 500px;
+  padding: 15px;
+}
+/* line 270, ../sass/index.scss */
+#terminal #topbar button {
+  height: 14px;
+  width: 14px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+/* line 279, ../sass/index.scss */
+#terminal #topbar button.close {
+  background-color: #f55551;
+}
+/* line 282, ../sass/index.scss */
+#terminal #topbar button.close::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  background: #360000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  opacity: 0;
+}
+/* line 295, ../sass/index.scss */
+#terminal #topbar button.close::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  background: #360000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  opacity: 0;
+}
+/* line 309, ../sass/index.scss */
+#terminal #topbar button.minimize {
+  background-color: #f6b73e;
+}
+/* line 312, ../sass/index.scss */
+#terminal #topbar button.minimize::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 8px;
+  background: #864502;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 0;
+}
+/* line 326, ../sass/index.scss */
+#terminal #topbar button.full {
+  background-color: #32c146;
+}
+/* line 329, ../sass/index.scss */
+#terminal #topbar button.full::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 8px;
+  background: #360000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  opacity: 0;
+  width: 6px;
+  height: 6px;
+  background: #0b5401;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  border: 1px solid #2ac833;
+  border-radius: 2px;
+}
+/* line 349, ../sass/index.scss */
+#terminal #topbar button.full::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 8px;
+  background: #360000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  opacity: 0;
+  width: 10px;
+  height: 2px;
+  background: #2ac833;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  opacity: 0;
+}
+/* line 370, ../sass/index.scss */
+#terminal #topbar:hover button::after, #terminal #topbar:hover button::before {
+  opacity: 1;
+}
+/* line 375, ../sass/index.scss */
+#terminal #prompt {
+  float: left;
+  margin-right: 7px;
+}
+/* line 380, ../sass/index.scss */
+#terminal #cmdline {
+  float: left;
+  margin: 0;
+  width: 96%;
+  font: inherit;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: inherit;
+}
+
+/* line 392, ../sass/index.scss */
+.fixed {
+  padding: 10px 0 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+/* line 400, ../sass/index.scss */
+.fixed img {
+  display: block !important;
+}
+/* line 404, ../sass/index.scss */
+.fixed span {
+  margin-left: 15px;
+}
+/* line 408, ../sass/index.scss */
+.fixed ul {
+  margin-right: 15px !important;
+}
+
+/* line 413, ../sass/index.scss */
+#contact {
+  text-align: center;
+}
+/* line 415, ../sass/index.scss */
+#contact .email-link {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 423, ../sass/index.scss */
+#contact .socials {
+  margin: 30px 0;
+}
+/* line 425, ../sass/index.scss */
+#contact .socials .social {
+  color: white;
+  background-color: #2abb9b;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  border-radius: 25px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin: 0 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 440, ../sass/index.scss */
+#contact button {
+  background-color: #39536B;
+  border: none;
+  color: #F1F1F1;
+  outline: 0;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 70px;
+}
+/* line 453, ../sass/index.scss */
+#contact .copyright {
+  color: #5f7282;
+}
+
+/* line 458, ../sass/index.scss */
+.dock {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+/* line 464, ../sass/index.scss */
+.dock .app {
+  float: right;
+  width: 60px;
+  cursor: pointer;
+  margin: 10px;
+}
+/* line 469, ../sass/index.scss */
+.dock .app img {
+  width: 100%;
+}
+
+/**
+ * Progress bar
+ */
+/* line 479, ../sass/index.scss */
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+  /* Reset the apperance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+  /* For IE10+, color of the progress bar */
+  color: red;
+}
+
+/* line 504, ../sass/index.scss */
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+/* line 508, ../sass/index.scss */
+.flat::-webkit-progress-value {
+  background-color: red;
+}
+
+/* line 512, ../sass/index.scss */
+.flat::-moz-progress-bar {
+  background-color: red;
+}
+
+/* line 516, ../sass/index.scss */
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, #2abb9b);
+}
+
+/* line 521, ../sass/index.scss */
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, #2abb9b);
+}
+
+/* line 526, ../sass/index.scss */
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+/* line 536, ../sass/index.scss */
+.progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}

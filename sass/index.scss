@@ -1,0 +1,541 @@
+$grey: #C7C7C7;
+$light-grey: #F1F1F1;
+$green: #2abb9b;
+$blue-footer: #293a49;
+
+@font-face {
+  font-family: Quantify;
+  src: url(../fonts/quantify/quantify.ttf);
+}
+
+@font-face {
+  font-family: Lato_Black;
+  src: url(../fonts/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: Lato_BlackItalic;
+  src: url(../fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: Lato_Bold;
+  src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: Lato_BoldItalic;
+  src: url(../fonts/Lato-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Lato_Medium;
+  src: url(../fonts/Lato-Medium.ttf);
+}
+
+@font-face {
+  font-family: Lato_Regular;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato_Thin;
+  src: url(../fonts/Lato-Thin.ttf);
+}
+
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Lato_Thin;
+}
+
+.divider{
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 10px auto 20px;
+  background-color: $green;
+}
+
+
+div.header{
+	height: 100%;
+	background: url(../images/header.jpg) fixed;
+  background-size: cover;
+
+
+	.topbar{
+    padding: 10px 15px;
+
+    img{
+      width: 30px;
+      vertical-align: middle;
+      margin-left: 20px;
+      margin-top: 4px;
+      float:left;
+      display: none;
+    }
+		span{
+			float:left;
+      cursor: pointer;
+      padding: 10px;
+      position: relative;
+      color: black;
+      &:after{
+        content: '';
+        display: block;
+        border-bottom: 2px solid $green;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+      }
+
+      &:hover:after{
+        width: 100%;
+      }
+		}
+
+		ul{
+			float:right;
+			padding: 0;
+			margin: 0;
+
+			li{
+				display: inline-block;
+				margin-left: 20px;
+				text-align: center;
+        cursor: pointer;
+        padding: 10px;
+        position: relative;
+        color: black ;
+        &:after{
+          content: '';
+          display: block;
+          border-bottom: 2px solid $green;
+          width: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+        }
+
+        &:hover:after{
+          width: 100%;
+        }
+			}
+		}
+	}
+
+
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.titles{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+    img{
+      width: 100px;
+    }
+	}
+}
+
+nav{
+  width: 100%;
+
+  ul li{
+    min-width: 35px;
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    color: $grey;
+    font-family: Lato_Regular;
+    font-size: 13px;
+    padding: 0 15px;
+    line-height: 36px;
+    border-radius: 30px;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease; /* IE10 is actually unprefixed */
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    margin: 0 15px;
+
+    &.active{
+      background: linear-gradient(to bottom right, #3acfd5, #3a8ed5);
+      color: white;
+    }
+
+    &:hover{
+      background: linear-gradient(to bottom right, #3acfd5, #3a8ed5);
+      color: white;
+    }
+
+  }
+}
+
+h2{
+  text-align: center;
+  font-size: 25px;
+  font-family: Quantify;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+section{
+  padding: 95px 0;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  .icon{
+    font-size: 68px;
+  }
+
+  p.presentation{
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+div.section-grey{
+  background-color: $light-grey;
+}
+
+div.section-footer{
+  background-color: $blue-footer;
+
+  h2{
+    color: white;
+  }
+}
+
+.element{
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0;
+  vertical-align: top;
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 25px;
+
+    &.left{
+      text-align: left;
+    }
+
+    .year{
+      color: $green;
+      font-weight: bold;
+    }
+  }
+
+  img{
+    width: 95%;
+  }
+
+  p{
+    width: 95%;
+    background-color: white;
+    margin:15px auto;
+    padding: 15px 0;
+  }
+}
+
+#terminal{
+    background-color: black;
+    color: white;
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 500px;
+    padding: 15px;
+
+    #topbar{
+
+      button{
+        height: 14px;
+        width: 14px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        margin-right: 10px;
+        position: relative;
+
+        &.close{
+          background-color: #f55551;
+
+          &::before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 10px;
+            background: #360000;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+            transform: translateY(-50%) translateX(-50%) rotate(45deg);
+            opacity: 0;
+          }
+
+          &::after{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 10px;
+            background: #360000;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+            transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+            opacity: 0;
+          }
+        }
+
+        &.minimize{
+          background-color: #f6b73e;
+
+          &::before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 8px;
+            background: #864502;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            opacity: 0;
+          }
+        }
+
+        &.full{
+          background-color: #32c146;
+
+          &::before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 8px;
+            background: #360000;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+            transform: translateY(-50%) translateX(-50%) rotate(45deg);
+            opacity: 0;
+            width: 6px;
+            height: 6px;
+            background: #0b5401;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            border: 1px solid #2ac833;
+            border-radius: 2px;
+          }
+
+          &::after{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 8px;
+            background: #360000;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+            transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+            opacity: 0;
+            width: 10px;
+            height: 2px;
+            background: #2ac833;
+            -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+            transform: translateY(-50%) translateX(-50%) rotate(45deg);
+            opacity: 0;
+          }
+        }
+      }
+
+      &:hover button::after, &:hover button::before{
+        opacity: 1;
+      }
+    }
+
+    #prompt {
+      float: left;
+      margin-right: 7px;
+    }
+
+    #cmdline {
+      float: left;
+      margin: 0;
+      width: 96%;
+      font: inherit;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      color: inherit;
+  }
+}
+
+.fixed{
+  padding: 10px 0 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+
+  img{
+    display: block !important;
+  }
+
+  span{
+    margin-left: 15px;
+  }
+
+  ul{
+    margin-right: 15px !important;
+  }
+}
+
+#contact{
+  text-align: center;
+  .email-link{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .socials{
+    margin: 30px 0;
+    .social{
+      color: white;
+      background-color: #2abb9b;
+      height: 50px;
+      width: 50px;
+      font-size: 30px;
+      border-radius: 25px;
+      line-height: 50px;
+      vertical-align: middle;
+      margin: 0 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  button{
+    background-color: #39536B;
+    border: none;
+    color: #F1F1F1;
+    outline: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 70px;
+  }
+
+  .copyright{
+    color: #5f7282;
+  }
+}
+
+.dock{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+
+  .app{
+    float: right;
+    width: 60px;
+    cursor: pointer;
+    margin: 10px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+/**
+ * Progress bar
+ */
+
+ progress {
+   /* Positioning */
+   position: fixed;
+   left: 0;
+   top: 0;
+
+   /* Dimensions */
+   width: 100%;
+   height: .25em;
+
+   /* Reset the apperance */
+   -webkit-appearance: none;
+      -moz-appearance: none;
+           appearance: none;
+
+   /* Get rid of the default border in Firefox/Opera. */
+   border: none;
+
+   /* For Firefox/IE10+ */
+   background-color: transparent;
+
+   /* For IE10+, color of the progress bar */
+   color: red;
+ }
+
+ progress::-webkit-progress-bar {
+   background-color: transparent;
+ }
+
+ .flat::-webkit-progress-value {
+   background-color: red;
+ }
+
+ .flat::-moz-progress-bar {
+   background-color: red;
+ }
+
+ .single::-webkit-progress-value {
+   background-color: transparent;
+   background-image: -webkit-linear-gradient(left, transparent, $green);
+ }
+
+ .single::-moz-progress-bar {
+   background-color: transparent;
+   background-image: -moz-linear-gradient(left, transparent, $green);
+ }
+
+ .progress-container {
+   width: 100%;
+   background-color: transparent;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: .25em;
+   display: block;
+ }
+
+ .progress-bar {
+   background-color: red;
+   width: 50%;
+   display: block;
+   height: inherit;
+ }

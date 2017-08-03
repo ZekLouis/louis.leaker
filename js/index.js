@@ -1,4 +1,77 @@
+class Terminal{
+  constructor(node){
+    this.node = node;
+    this.commands = [
+      'help','list','ping','me','contact'
+    ];
+    let that = this;
+    $('#cmdline').on("keyup", function(e) {
+        if (e.keyCode == 13 && $("#cmdline").val() != '') {
+            that.submit($("#cmdline").val())
+        }
+    });
+  }
+
+  submit(cmd){
+    console.log(cmd);
+
+    let that = this;
+    var res = '';
+    switch(cmd){
+      case 'help':
+        res = that.help()
+        break;
+
+      case 'list':
+        res = that.list()
+        break;
+
+      case 'ping':
+        res = 'pong'
+        break;
+
+      case 'me':
+        res = that.me()
+        break;
+
+      case 'contact':
+        res = that.contact()
+        break;
+
+      default:
+        res = 'This command doesn\'t exist. type "help"';
+    }
+    $("#cmdline").val('');
+    $("#output").append($('<p>',{
+      html: '$> '+cmd
+    }));
+    $("#output").append($('<p>',{
+      html: res
+    }));
+    var mydiv = $(".term-content");
+    mydiv.scrollTop(mydiv.prop("scrollHeight"));
+  }
+
+  help(){
+    return this.commands.join('<br />');
+  }
+
+  list(){
+    return this.help()
+  }
+
+  me(){
+    return 'I\'m a french student living in Limoges and currently working at <a href="https://pro.iconosquare.com">iconosquare</a><br />I made this terminal.'
+  }
+
+  contact(){
+    return '<a href="mailto:louis.gaume@etu.unilim.fr">louis.gaume@etu.unilim.fr</a>'
+  }
+}
+
 $(function(){
+  var terminal = new Terminal($("#terminal"));
+
   $("#terminal").draggable();
 
   $(".close").click(function(){

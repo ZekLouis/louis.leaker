@@ -88,11 +88,6 @@ $(function(){
     $(".dock").hide();
   });
 
-  var terminal = new Terminal("#terminal");
-
-
-
-
 
   var height = window.innerHeight;
 

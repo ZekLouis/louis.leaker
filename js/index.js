@@ -15,6 +15,8 @@ $(function(){
     $(".dock").hide();
   });
 
+  var terminal = new Terminal("#terminal");
+
 
 
 

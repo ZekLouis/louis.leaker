@@ -88,6 +88,33 @@ $(function(){
     $(".dock").hide();
   });
 
+  $("#web").on('click', function() {
+    $(".element").hide();
+    $(".element.web").show();
+    $(".active").removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $("#all").on('click', function() {
+    $(".element").show();
+    $(".active").removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $("#mobile").on('click', function() {
+    $(".element").hide();
+    $(".element.mobile").show();
+    $(".active").removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $("#others").on('click', function() {
+    $(".element").hide();
+    $(".element.others").show();
+    $(".active").removeClass('active');
+    $(this).addClass('active');
+  });
+
 
   var height = window.innerHeight;
 

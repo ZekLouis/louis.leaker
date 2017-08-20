@@ -271,8 +271,9 @@ div.section-footer h2 {
 /* line 278, ../sass/index.scss */
 .element img {
   width: 95%;
+  height: 250px;
 }
-/* line 282, ../sass/index.scss */
+/* line 283, ../sass/index.scss */
 .element p {
   width: 95%;
   background-color: white;
@@ -280,7 +281,7 @@ div.section-footer h2 {
   padding: 15px 0;
 }
 
-/* line 290, ../sass/index.scss */
+/* line 291, ../sass/index.scss */
 #terminal {
   background-color: black;
   color: white;
@@ -289,12 +290,12 @@ div.section-footer h2 {
   height: 500px;
   padding: 15px;
 }
-/* line 298, ../sass/index.scss */
+/* line 299, ../sass/index.scss */
 #terminal div.term-content {
   overflow: auto;
   height: 95%;
 }
-/* line 305, ../sass/index.scss */
+/* line 306, ../sass/index.scss */
 #terminal #topbar button {
   height: 14px;
   width: 14px;
@@ -304,11 +305,11 @@ div.section-footer h2 {
   margin-right: 10px;
   position: relative;
 }
-/* line 314, ../sass/index.scss */
+/* line 315, ../sass/index.scss */
 #terminal #topbar button.close {
   background-color: #f55551;
 }
-/* line 317, ../sass/index.scss */
+/* line 318, ../sass/index.scss */
 #terminal #topbar button.close::before {
   content: "";
   position: absolute;
@@ -321,7 +322,7 @@ div.section-footer h2 {
   transform: translateY(-50%) translateX(-50%) rotate(45deg);
   opacity: 0;
 }
-/* line 330, ../sass/index.scss */
+/* line 331, ../sass/index.scss */
 #terminal #topbar button.close::after {
   content: "";
   position: absolute;
@@ -334,11 +335,11 @@ div.section-footer h2 {
   transform: translateY(-50%) translateX(-50%) rotate(-45deg);
   opacity: 0;
 }
-/* line 344, ../sass/index.scss */
+/* line 345, ../sass/index.scss */
 #terminal #topbar button.minimize {
   background-color: #f6b73e;
 }
-/* line 347, ../sass/index.scss */
+/* line 348, ../sass/index.scss */
 #terminal #topbar button.minimize::before {
   content: "";
   position: absolute;
@@ -351,11 +352,11 @@ div.section-footer h2 {
   transform: translateY(-50%) translateX(-50%);
   opacity: 0;
 }
-/* line 361, ../sass/index.scss */
+/* line 362, ../sass/index.scss */
 #terminal #topbar button.full {
   background-color: #32c146;
 }
-/* line 364, ../sass/index.scss */
+/* line 365, ../sass/index.scss */
 #terminal #topbar button.full::before {
   content: "";
   position: absolute;
@@ -375,7 +376,7 @@ div.section-footer h2 {
   border: 1px solid #2ac833;
   border-radius: 2px;
 }
-/* line 384, ../sass/index.scss */
+/* line 385, ../sass/index.scss */
 #terminal #topbar button.full::after {
   content: "";
   position: absolute;
@@ -394,16 +395,16 @@ div.section-footer h2 {
   transform: translateY(-50%) translateX(-50%) rotate(45deg);
   opacity: 0;
 }
-/* line 405, ../sass/index.scss */
+/* line 406, ../sass/index.scss */
 #terminal #topbar:hover button::after, #terminal #topbar:hover button::before {
   opacity: 1;
 }
-/* line 410, ../sass/index.scss */
+/* line 411, ../sass/index.scss */
 #terminal #prompt {
   float: left;
   margin-right: 7px;
 }
-/* line 415, ../sass/index.scss */
+/* line 416, ../sass/index.scss */
 #terminal #cmdline {
   float: left;
   margin: 0;
@@ -414,12 +415,12 @@ div.section-footer h2 {
   outline: none;
   color: inherit;
 }
-/* line 426, ../sass/index.scss */
+/* line 427, ../sass/index.scss */
 #terminal a {
   color: white;
 }
 
-/* line 431, ../sass/index.scss */
+/* line 432, ../sass/index.scss */
 .fixed {
   padding: 10px 0 !important;
   position: fixed;
@@ -428,24 +429,24 @@ div.section-footer h2 {
   background-color: white;
   z-index: 1;
 }
-/* line 439, ../sass/index.scss */
+/* line 440, ../sass/index.scss */
 .fixed img {
   display: block !important;
 }
-/* line 443, ../sass/index.scss */
+/* line 444, ../sass/index.scss */
 .fixed span {
   margin-left: 15px;
 }
-/* line 447, ../sass/index.scss */
+/* line 448, ../sass/index.scss */
 .fixed ul {
   margin-right: 15px !important;
 }
 
-/* line 452, ../sass/index.scss */
+/* line 453, ../sass/index.scss */
 #contact {
   text-align: center;
 }
-/* line 454, ../sass/index.scss */
+/* line 455, ../sass/index.scss */
 #contact .email-link {
   color: white;
   font-size: 24px;
@@ -453,11 +454,11 @@ div.section-footer h2 {
   text-align: center;
   text-decoration: none;
 }
-/* line 462, ../sass/index.scss */
+/* line 463, ../sass/index.scss */
 #contact .socials {
   margin: 30px 0;
 }
-/* line 464, ../sass/index.scss */
+/* line 465, ../sass/index.scss */
 #contact .socials .social {
   color: white;
   background-color: #2abb9b;
@@ -471,7 +472,7 @@ div.section-footer h2 {
   display: inline-block;
   cursor: pointer;
 }
-/* line 479, ../sass/index.scss */
+/* line 480, ../sass/index.scss */
 #contact button {
   background-color: #39536B;
   border: none;
@@ -484,26 +485,26 @@ div.section-footer h2 {
   font-size: 20px;
   margin-top: 70px;
 }
-/* line 492, ../sass/index.scss */
+/* line 493, ../sass/index.scss */
 #contact .copyright {
   color: #5f7282;
 }
 
-/* line 497, ../sass/index.scss */
+/* line 498, ../sass/index.scss */
 .dock {
   position: fixed;
   bottom: 0;
   width: 100%;
   display: none;
 }
-/* line 503, ../sass/index.scss */
+/* line 504, ../sass/index.scss */
 .dock .app {
   float: right;
   width: 60px;
   cursor: pointer;
   margin: 10px;
 }
-/* line 508, ../sass/index.scss */
+/* line 509, ../sass/index.scss */
 .dock .app img {
   width: 100%;
 }
@@ -511,7 +512,7 @@ div.section-footer h2 {
 /**
  * Progress bar
  */
-/* line 518, ../sass/index.scss */
+/* line 519, ../sass/index.scss */
 progress {
   /* Positioning */
   position: fixed;
@@ -532,34 +533,34 @@ progress {
   color: red;
 }
 
-/* line 543, ../sass/index.scss */
+/* line 544, ../sass/index.scss */
 progress::-webkit-progress-bar {
   background-color: transparent;
 }
 
-/* line 547, ../sass/index.scss */
+/* line 548, ../sass/index.scss */
 .flat::-webkit-progress-value {
   background-color: red;
 }
 
-/* line 551, ../sass/index.scss */
+/* line 552, ../sass/index.scss */
 .flat::-moz-progress-bar {
   background-color: red;
 }
 
-/* line 555, ../sass/index.scss */
+/* line 556, ../sass/index.scss */
 .single::-webkit-progress-value {
   background-color: transparent;
   background-image: -webkit-linear-gradient(left, transparent, #2abb9b);
 }
 
-/* line 560, ../sass/index.scss */
+/* line 561, ../sass/index.scss */
 .single::-moz-progress-bar {
   background-color: transparent;
   background-image: -moz-linear-gradient(left, transparent, #2abb9b);
 }
 
-/* line 565, ../sass/index.scss */
+/* line 566, ../sass/index.scss */
 .progress-container {
   width: 100%;
   background-color: transparent;
@@ -570,7 +571,7 @@ progress::-webkit-progress-bar {
   display: block;
 }
 
-/* line 575, ../sass/index.scss */
+/* line 576, ../sass/index.scss */
 .progress-bar {
   background-color: red;
   width: 50%;

@@ -80,6 +80,7 @@ html, body{
 	padding: 0;
 	height: 100%;
 	font-family: Lato_Thin;
+  background-color: $blue-footer;
 }
 
 .divider{
@@ -242,6 +243,10 @@ section{
 
 div.section-grey{
   background-color: $light-grey;
+}
+
+div.section-white{
+  background-color: white;
 }
 
 div.section-footer{
@@ -511,6 +516,8 @@ div.section-footer{
     }
   }
 }
+
+
 
 /**
  * Progress bar

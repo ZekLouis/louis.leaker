@@ -82,11 +82,11 @@ div.header {
   background: url(../images/header.jpg) fixed;
   background-size: cover;
 }
-/* line 101, ../sass/index.scss */
+/* line 100, ../sass/index.scss */
 div.header .topbar {
   padding: 10px 15px;
 }
-/* line 104, ../sass/index.scss */
+/* line 103, ../sass/index.scss */
 div.header .topbar img {
   width: 30px;
   vertical-align: middle;
@@ -291,7 +291,7 @@ div.section-footer h2 {
 #terminal {
   background-color: black;
   color: white;
-  width: 1000px;
+  width: 85%;
   margin: 0 auto;
   height: 500px;
   padding: 15px;
@@ -515,10 +515,56 @@ div.section-footer h2 {
   width: 100%;
 }
 
+@media screen and (max-width: 720px) {
+  /* line 526, ../sass/index.scss */
+  section {
+    padding: 95px 15px;
+  }
+
+  /* line 531, ../sass/index.scss */
+  div.header .topbar i.pe-7s-home {
+    display: none;
+  }
+  /* line 535, ../sass/index.scss */
+  div.header .topbar img {
+    float: none;
+    margin: 0 auto;
+  }
+  /* line 539, ../sass/index.scss */
+  div.header .topbar ul {
+    margin: 0;
+    clear: both;
+    text-align: center;
+    float: none;
+  }
+  /* line 544, ../sass/index.scss */
+  div.header .topbar ul li {
+    margin: 0 3px;
+  }
+
+  /* line 551, ../sass/index.scss */
+  nav ul {
+    padding: 0;
+    margin-left: 15px;
+  }
+  /* line 554, ../sass/index.scss */
+  nav ul li {
+    margin: 0;
+  }
+
+  /* line 560, ../sass/index.scss */
+  .element {
+    width: 100%;
+  }
+  /* line 562, ../sass/index.scss */
+  .element img {
+    height: inherit;
+  }
+}
 /**
  * Progress bar
  */
-/* line 526, ../sass/index.scss */
+/* line 572, ../sass/index.scss */
 progress {
   /* Positioning */
   position: fixed;
@@ -539,34 +585,34 @@ progress {
   color: red;
 }
 
-/* line 551, ../sass/index.scss */
+/* line 597, ../sass/index.scss */
 progress::-webkit-progress-bar {
   background-color: transparent;
 }
 
-/* line 555, ../sass/index.scss */
+/* line 601, ../sass/index.scss */
 .flat::-webkit-progress-value {
   background-color: red;
 }
 
-/* line 559, ../sass/index.scss */
+/* line 605, ../sass/index.scss */
 .flat::-moz-progress-bar {
   background-color: red;
 }
 
-/* line 563, ../sass/index.scss */
+/* line 609, ../sass/index.scss */
 .single::-webkit-progress-value {
   background-color: transparent;
   background-image: -webkit-linear-gradient(left, transparent, #2abb9b);
 }
 
-/* line 568, ../sass/index.scss */
+/* line 614, ../sass/index.scss */
 .single::-moz-progress-bar {
   background-color: transparent;
   background-image: -moz-linear-gradient(left, transparent, #2abb9b);
 }
 
-/* line 573, ../sass/index.scss */
+/* line 619, ../sass/index.scss */
 .progress-container {
   width: 100%;
   background-color: transparent;
@@ -577,7 +623,7 @@ progress::-webkit-progress-bar {
   display: block;
 }
 
-/* line 583, ../sass/index.scss */
+/* line 629, ../sass/index.scss */
 .progress-bar {
   background-color: red;
   width: 50%;

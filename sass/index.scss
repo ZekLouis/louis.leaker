@@ -76,10 +76,10 @@ $blue-footer: #293a49;
 
 
 html, body{
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	font-family: Lato_Thin;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Lato_Thin;
   background-color: $blue-footer;
 }
 
@@ -93,10 +93,9 @@ html, body{
 
 
 div.header{
-	height: 100%;
-	background: url(../images/header.jpg) fixed;
-  background-size: cover;
-
+    height: 100%;
+    background: url(../images/header.jpg) fixed;
+    background-size: cover;
 
 	.topbar{
     padding: 10px 15px;
@@ -109,42 +108,13 @@ div.header{
       float:left;
       display: none;
     }
-		span{
-			float:left;
-      cursor: pointer;
-      padding: 10px;
-      position: relative;
-      color: black;
-      &:after{
-        content: '';
-        display: block;
-        border-bottom: 2px solid $green;
-        width: 0;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        -webkit-transition: 0.3s ease;
-        transition: 0.3s ease;
-      }
 
-      &:hover:after{
-        width: 100%;
-      }
-		}
-
-		ul{
-			float:right;
-			padding: 0;
-			margin: 0;
-
-			li{
-				display: inline-block;
-				margin-left: 20px;
-				text-align: center;
+    span{
+        float:left;
         cursor: pointer;
         padding: 10px;
         position: relative;
-        color: black ;
+        color: black;
         &:after{
           content: '';
           display: block;
@@ -160,9 +130,39 @@ div.header{
         &:hover:after{
           width: 100%;
         }
-			}
-		}
-	}
+    }
+
+    ul{
+        float:right;
+        padding: 0;
+        margin: 0;
+
+        li{
+            display: inline-block;
+            margin-left: 20px;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+            position: relative;
+            color: black ;
+            &:after{
+              content: '';
+              display: block;
+              border-bottom: 2px solid $green;
+              width: 0;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              -webkit-transition: 0.3s ease;
+              transition: 0.3s ease;
+            }
+
+            &:hover:after{
+              width: 100%;
+            }
+        }
+    }
+}
 
 
 	ul{
@@ -177,9 +177,9 @@ div.header{
 		left:50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-    img{
-      width: 100px;
-    }
+        img{
+          width: 100px;
+        }
 	}
 }
 
@@ -296,7 +296,7 @@ div.section-footer{
 #terminal{
     background-color: black;
     color: white;
-    width: 1000px;
+    width: 85%;
     margin: 0 auto;
     height: 500px;
     padding: 15px;
@@ -517,7 +517,53 @@ div.section-footer{
   }
 }
 
+@media screen and (max-width: 1280px){
 
+}
+
+@media screen and (max-width: 720px){
+
+  section{
+    padding: 95px 15px;
+  }
+  div.header .topbar {
+
+    i.pe-7s-home{
+      display: none;
+    }
+
+    img{
+      float: none;
+      margin: 0 auto;
+    }
+    ul{
+      margin: 0;
+      clear: both;
+      text-align: center;
+      float: none;
+      li{
+        margin: 0 3px;
+      }
+    }
+  }
+
+  nav{
+    ul{
+      padding: 0;
+      margin-left: 15px;
+      li{
+        margin: 0;
+      }
+    }
+  }
+
+  .element{
+    width: 100%;
+    img{
+      height: inherit;
+    }
+  }
+}
 
 /**
  * Progress bar
